@@ -1,0 +1,267 @@
+body {
+    background-color: #ffff;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-style:solid;
+    border-color: black;
+    border-width: 1px;
+    margin: 10px 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-style:solid;
+    border-color: black;
+    border-width: 1px;
+    margin: 50px 30px 10px;
+}
+
+header p, footer p, .etna-linkabile h2 {
+    font-family: "Quicksand";
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+header ul, footer ul {
+    font-family: "Quicksand";
+    list-style: none;
+    display: flex;
+    gap: 70px;    
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+header a, footer a, .etna-linkabile a, .parchi-item-2 h2 {
+    color: black;
+    text-decoration: none;
+}
+
+header a:hover, footer a:hover, .etna-linkabile a:hover, .parchi-item-2 h2:hover {
+    text-decoration:underline;
+    color: black;
+    font-weight: bold;
+}
+
+.titolo-1 p, .titolo-2 p, .parchi-titolo-1, .parchi-titolo-2, .etna-titolo-1, .attività-titolo-1 {
+    font-family: "Fredericka The Great";
+    font-size: 74px;
+    text-align: center;
+    margin: 100px 250px;
+}
+
+.testo-1 p, .parchi-testo-1 p, .etna-testo-1 p {
+    font-family: "Quicksand";
+    font-size: 18px;
+    text-align:left;
+    margin: 100px 260px;
+    padding: 0 300px 100px 0;
+    border-style:solid;
+    border-color: black;
+    border-top: 10px;
+    border-left: 10px;
+    border-right: 10px;
+    border-width: 1px;
+}
+
+section.card, section.parchi-card-2{
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.grid, .parchi-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.grid .item img, .parchi-grid-2 .parchi-item-2 img {
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.item h2, .parchi-item-2 h2 {
+    font-family: "Quicksand";
+    font-size: 18px;
+    text-align: center;
+    border-style:solid;
+    border-color: black;
+    border-width: 1px;
+    margin: 10px 0;
+}
+
+.titolo-3, .parchi-titolo-3, .etna-titolo-2, .etna-titolo-3, .etna-titolo-4, .etna-titolo-5, .attività-titolo-2 {
+    font-family: "Fredericka The Great";
+    font-size: 74px;
+    text-align: center;
+    border-style:solid;
+    border-color: black;
+    margin: 100px 260px;
+    border-bottom: 10px;
+    border-left: 10px;
+    border-right: 10px;
+    border-width: 1px;
+}
+
+.item-2 img, .etna-item-1 img{
+    height: auto;
+    width: 100%;
+}
+
+.testo-2 p, .parchi-testo-2, .etna-testo-2 {
+    font-family: "Quicksand";
+    font-size: 18px;
+    text-align:left;
+    margin: 100px 260px;
+}
+
+.etna-testo-3, .etna-testo-4, .etna-testo-5, .etna-testo-6, .attività-testo-2{
+    font-family: "Quicksand";
+    font-size: 18px;
+    text-align:left;
+    margin: 100px 260px;
+}
+
+.etna-grid {
+    margin: 100px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.etna-item-2 img {
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.elenco-attività-1 p, .elenco-attività-2 p, .elenco-attività-3 p, .elenco-attività-4 p, .elenco-attività-5 p {
+    font-family: "Quicksand";
+    font-weight: bold;
+    font-size: 18px;
+    text-align:left;
+    text-transform: uppercase;
+    margin: 100px 260px 20px;
+}
+
+.elenco-attività-1 a, .elenco-attività-2 a, .elenco-attività-3 a, .elenco-attività-4 a, .elenco-attività-5 a {
+    font-family: "Quicksand";
+    font-weight: bold;
+    font-size: 18px;
+    text-align:left;
+    color: black;
+    text-decoration: none;
+}
+
+.elenco-attività-1 a:hover, .elenco-attività-2 a:hover, .elenco-attività-3 a:hover, .elenco-attività-4 a:hover, .elenco-attività-5 a:hover {
+    text-decoration:underline;
+    color: black;
+}
+
+.elenco-attività-1 ul, .elenco-attività-2 ul, .elenco-attività-3 ul, .elenco-attività-4 ul, .elenco-attività-5 ul {
+    font-family: "Quicksand";
+    font-size: 18px;
+    text-align:left;
+    margin: 10px 260px;
+}
+
+@media (max-width: 600px) {
+
+    header p, footer p {
+        font-size: 10px;
+    }
+
+    header ul, footer ul {
+        gap: 10px;
+        font-size: 10px;
+    }
+
+    .titolo-1 p, .titolo-2 p, .parchi-titolo-1, .parchi-titolo-2, .etna-titolo-1, .attività-titolo-1{
+        font-size: 34px;
+        margin: 40px 20px;
+    }
+
+    .testo-1 p, .parchi-testo-1 p, .etna-testo-1 p, .attività-testo-1 p, .attività-testo-2 {
+        font-size: 13px;
+        margin: 0 40px;
+        padding: 0 0 50px 0;
+    }
+
+    section.card, section.parchi-card-2, .etna-card {
+        margin: 30px;
+    }
+
+    .etna-grid .etna-item-2 img {
+        height: 80px;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .grid, .parchi-grid-2 {
+        gap: 15px;
+    }
+
+    .grid .item img, .parchi-grid-2 .parchi-item-2 img {
+        height: 150px;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .item h2, .parchi-item-2 h2 {
+        font-size: 13px;
+        margin: 10px 0;
+    }
+
+    .titolo-3, .parchi-titolo-3, .attività-titolo-2 {
+        font-size: 34px;
+        margin: 40px;
+    }
+
+    .etna-titolo-2, .etna-titolo-3, .etna-titolo-4, .etna-titolo-5 {
+        font-size: 34px;
+        margin: 30px;
+    }
+    
+    .item-2 img, .etna-item-1 img{
+        height: auto;
+        width: 100%;
+    }
+    
+    .testo-2 p, .parchi-testo-2, .etna-testo-2, .etna-testo-3, .etna-testo-4, .etna-testo-5 {
+        font-size: 13px;
+        margin: 40px;
+    }
+    
+    .elenco-attività-1 p, .elenco-attività-2 p, .elenco-attività-3 p, .elenco-attività-4 p, .elenco-attività-5 p {
+        font-size: 13px;
+        margin: 40px 40px 10px; 
+    }
+
+    .elenco-attività-1 a, .elenco-attività-2 a, .elenco-attività-3 a, .elenco-attività-4 a, .elenco-attività-5 a {
+        font-size: 13px;
+        margin: 0;
+    }
+
+    .elenco-attività-1 ul, .elenco-attività-2 ul, .elenco-attività-3 ul, .elenco-attività-4 ul, .elenco-attività-5 ul {
+        font-size: 13px;
+        margin: 5px 40px;
+    }
+
+    .attività-testo-2 {
+        font-size: 13px;
+        margin: 40px 40px 0;
+        padding: 0;
+    }
+
+    .etna-testo-6 {
+        font-size: 13px;
+        margin: 10px 40px 50px;
+    }
+
+}

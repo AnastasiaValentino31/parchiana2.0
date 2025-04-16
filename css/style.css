@@ -179,6 +179,7 @@ section.card, section.parchi-card-2{
     }
 
     header ul, footer ul {
+        padding: 0px;
         gap: 10px;
         font-size: 10px;
     }
